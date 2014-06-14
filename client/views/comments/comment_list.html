@@ -1,7 +1,8 @@
 <template name="commentList">
 	<div class="comments">
+		<h4>Comments</h4>
 		{{#each comments}}
-			<h3>{{name}} @( {{date}} )</h3>
+			<h3>{{name}} {{date}}</h3>
 			<p>
 				{{comment}}
 			</p>
