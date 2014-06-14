@@ -6,3 +6,6 @@ Router.configure
 Router.map ->
   @router "home",
     path: "/"
+  waitOn: ->
+    Meteor.subscribe "comments"
+    Meteor.subscribe "specials"
