@@ -1,5 +1,3 @@
 Template.commentItem.helpers({
-	comments: function() {
-		return Comments.find({});
-	}
+	dateString: this.date.format("ddd, MMM, D")
 });

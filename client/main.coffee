@@ -1,3 +1,3 @@
-Meteor.startup ->
-  Deps.autorun ->
-    Meteor.subscribe "comments"
+#Meteor.startup ->
+# Deps.autorun ->
+#    Meteor.subscribe "comments"

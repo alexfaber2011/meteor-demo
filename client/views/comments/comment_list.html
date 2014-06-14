@@ -2,10 +2,9 @@
 	<div class="comments">
 		<h4>Comments</h4>
 		{{#each comments}}
-			<h3>{{name}} {{date}}</h3>
-			<p>
-				{{comment}}
-			</p>
+			{{> commentItem}}
 		{{/each}}
 	</div>
+	<button class="demo_button" type="button">Demo Comment Reactivity</button>
+	<button class="clear_button" type="button">Clear</button>
 </template>

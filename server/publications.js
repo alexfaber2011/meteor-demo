@@ -1,3 +1,3 @@
 Meteor.publish('comments', function () {
-	return Comments.find({});
+	return Comments.find();
 });
