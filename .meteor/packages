@@ -8,3 +8,6 @@ insecure
 coffeescript
 iron-router
 bootstrap-3
+font-awesome
+animate-css
+gsap
