@@ -10,7 +10,7 @@
 ### Meteor ###
 .meteor/local
 .meteor/meteorite
-
+.meteor
 
 ### Node ###
 # Logs
