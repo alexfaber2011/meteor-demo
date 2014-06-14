@@ -1,0 +1,10 @@
+<template name="commentList">
+	<div class="comments">
+		{{#each comments}}
+			<h3>{{name}} @( {{date}} )</h3>
+			<p>
+				{{comment}}
+			</p>
+		{{/each}}
+	</div>
+</template>
