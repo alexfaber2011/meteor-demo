@@ -1,10 +1,9 @@
 Router.configure
   layoutTemplate: "layout"
-  notFoundTemplate: "notfound"
-  loadingTemplate: "loading"
+
 
 Router.map ->
-  @router "home",
+  @route "home",
     path: "/"
   waitOn: ->
     Meteor.subscribe "comments"

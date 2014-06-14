@@ -4,6 +4,8 @@
     "bootstrap-3": {},
     "font-awesome": {},
     "animate-css": {},
-    "gsap": {}
+    "gsap": {},
+    "simple-schema": {},
+    "autoform": {}
   }
 }
