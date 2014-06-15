@@ -6,6 +6,7 @@
     "animate-css": {},
     "gsap": {},
     "simple-schema": {},
-    "autoform": {}
+    "autoform": {},
+    "spin": {}
   }
 }

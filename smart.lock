@@ -8,7 +8,8 @@
       "animate-css": {},
       "gsap": {},
       "simple-schema": {},
-      "autoform": {}
+      "autoform": {},
+      "spin": {}
     },
     "packages": {
       "iron-router": {
@@ -45,6 +46,11 @@
         "git": "https://github.com/aldeed/meteor-autoform.git",
         "tag": "v0.11.0",
         "commit": "efdffcdf836a45c50c39696ede15399177ccb9fa"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
