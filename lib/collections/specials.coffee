@@ -1,5 +1,5 @@
 @Specials = new Meteor.Collection "specials",
-  schema: new SimpleSchema
+  schema:
     name:
       type: String
     available:

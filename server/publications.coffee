@@ -1,2 +1,2 @@
 Meteor.publish "specials", ->
-  Specials.find
+  Specials.find()
