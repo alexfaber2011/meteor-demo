@@ -1,0 +1,6 @@
+<template name="addComment">
+    <div>
+        <h4> Leave a comment </h4>
+        {{> quickForm collection="Comments" id="insertCommentForm" type="method" meteormethod="insertComment" omitFields="date"}}
+    </div>
+</template>

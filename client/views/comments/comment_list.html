@@ -1,10 +1,11 @@
 <template name="commentList">
-	<div class="comments">
+	<div class="col-md-6">
 		<button class="demo_button" type="button">Demo Comment Reactivity</button>
 		<button class="clear_button" type="button">Clear</button>
 		<h4>Comments</h4>
 		{{#each comments}}
 			{{> commentItem}}
 		{{/each}}
+		{{> addComment}}
 	</div>
 </template>

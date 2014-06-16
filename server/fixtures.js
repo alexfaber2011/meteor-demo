@@ -1,25 +1,25 @@
 if(Comments.find().count() === 0 ) {
 	Comments.insert({
 		name: 'Bob Johnson',
-		date: moment(),
+		date: new Date(),
 		comment: 'I really enjoyed the specials'
 	});
 
 	Comments.insert({
 		name: 'Sarah Jo',
-		date: moment(),
+		date: new Date(),
 		comment: 'My favorite spot EVER!'
 	});
 	
 	Comments.insert({
 		name: 'Tommy Anderson',
-		date: moment(),
+		date: new Date(),
 		comment: 'Come for the food! Stay for the awesome website!'
 	});
 
 	Comments.insert({
 		name: 'James Gram',
-		date: moment(),
+		date: new Date(),
 		comment: 'Was super crowded last night :('
 	});
 }
