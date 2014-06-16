@@ -1,5 +1,4 @@
 if(Comments.find().count() === 0 ) {
-
 	Comments.insert({
 		name: 'Bob Johnson',
 		date: moment(),
@@ -23,5 +22,4 @@ if(Comments.find().count() === 0 ) {
 		date: moment(),
 		comment: 'Was super crowded last night :('
 	});
-	
 }

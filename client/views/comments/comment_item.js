@@ -1,3 +1,5 @@
 Template.commentItem.helpers({
-	dateString: this.date.format("ddd, MMM, D")
+  dateString: function () {
+    return this.date.format("ddd, MMM YYYY");
+  }
 });
