@@ -9,9 +9,16 @@
         <!-- font-awesome, bootstrap, and animate.css taken care of with mrt -->
         <link href="/coworker/css/magnific-popup.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div class="container">
-            {{>yield}}
+    <body class="stretched">
+        <div id="wrapper" class="clearfix">
+            {{> header}}
+            <div class="content">
+                <div class="content-wrap">
+                    <div class="container clearfix">
+                        {{>yield}}
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </template>

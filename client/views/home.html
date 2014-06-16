@@ -1,8 +1,13 @@
 <template name="home">
-    <h1 class="text-center">Home</h1>
+    <div class="col_full center">
+        <h2>Welcome to Meteor-Demo.  We're just <span>playing</span> around</h2>
+    </div>
     <div class="row">
         {{> addSpecial}}
         {{> specialsList}}
     </div>
-	{{> commentList}}
+    <div class="dotted-divider"></div>
+    <div class="row">
+        {{> commentList}}
+    </div>
 </template>
