@@ -10,6 +10,7 @@
       max: 500
     votes:
       type: Number
+      min: 0
 
 @Specials.allow
   insert: ->
