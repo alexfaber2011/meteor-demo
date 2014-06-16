@@ -8,7 +8,9 @@
       "animate-css": {},
       "gsap": {},
       "simple-schema": {},
-      "autoform": {}
+      "autoform": {},
+      "spin": {},
+      "collection2": {}
     },
     "packages": {
       "iron-router": {
@@ -46,15 +48,20 @@
         "tag": "v0.11.0",
         "commit": "efdffcdf836a45c50c39696ede15399177ccb9fa"
       },
-      "blaze-layout": {
-        "git": "https://github.com/EventedMind/blaze-layout.git",
-        "tag": "v0.2.4",
-        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
         "tag": "v0.4.1",
         "commit": "a9ffc9b285c3af8ad631f9cda4851b0ffc30c5ce"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",

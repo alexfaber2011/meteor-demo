@@ -1,5 +1,5 @@
 Template.commentItem.helpers({
-	comments: function() {
-		return Comments.find({});
-	}
+  dateString: function () {
+    return this.date.toDateString();
+  }
 });

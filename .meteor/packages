@@ -13,4 +13,6 @@ animate-css
 gsap
 simple-schema
 autoform
+moment
+spin
 collection2
