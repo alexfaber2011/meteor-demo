@@ -1,4 +1,6 @@
 Template.specialsList.helpers
   specials: ->
     console.log "[specialsList helper]"
-    Specials.find()
+    Specials.find {},
+      sort:
+        votes: -1
