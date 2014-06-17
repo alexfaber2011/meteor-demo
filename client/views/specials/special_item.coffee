@@ -10,9 +10,10 @@ Template.specialItem.helpers
 
 Template.specialItem.events
   "click #vote": ->
-    console.log "[specialItems vote] id: ", @._id
     Specials.update
       _id: @._id
     ,
       $inc:
         votes: 1
+  "click #remove": ->
+    Specials.remove _id: @._id
