@@ -8,6 +8,7 @@
     "simple-schema": {},
     "autoform": {},
     "spin": {},
-    "collection2": {}
+    "collection2": {},
+    "reactive-modal": {}
   }
 }
