@@ -1,6 +1,14 @@
 <template name="addComment">
-    <div>
-        <h4> Leave a comment </h4>
-        {{> quickForm collection="Comments" id="insertCommentForm" type="method" meteormethod="insertComment" omitFields="date"}}
+    <div id="respond" class="clearfix">
+		<h3>Leave a <span>Comment</span></h3>
+        {{#autoForm collection="Comments" id="insertCommentForm" type="method" meteormethod="insertComment" omitFields="date"}}
+	    <fieldset>
+	        {{> afQuickField name='name'}}
+	        {{> afQuickField name='comment'}}
+	    </fieldset>
+	    <div class="col_full nobottommargin">
+			<button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="btn">Submit Comment</button>
+		</div>
+	    {{/autoForm}}
     </div>
 </template>
