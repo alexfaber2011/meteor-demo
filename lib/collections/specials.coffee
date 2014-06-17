@@ -19,5 +19,3 @@
     yes
   remove: ->
     yes
-
-
