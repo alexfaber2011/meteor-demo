@@ -11,7 +11,8 @@
       "autoform": {},
       "spin": {},
       "collection2": {},
-      "reactive-modal": {}
+      "reactive-modal": {},
+      "iron-router-active": {}
     },
     "packages": {
       "iron-router": {
@@ -63,6 +64,11 @@
         "git": "https://github.com/pahans/reactive-modal.git",
         "tag": "v0.1.2",
         "commit": "3ed9319c991c1567b4e9b6a85d33c6d4571aacb2"
+      },
+      "iron-router-active": {
+        "git": "https://github.com/XpressiveCode/iron-router-active.git",
+        "tag": "v0.2.0",
+        "commit": "1b05aad5325c3dfdb5186b9c288aa53013d767b8"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

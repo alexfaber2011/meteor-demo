@@ -2,33 +2,26 @@
     <div id="header">
         <div class="container clearfix">
         <div id="logo">
-
-            <a href="index.php" class="standard-logo"><img src="images/dickbutt.png" alt="CoWorker" title="CoWorker"></a>
-            <a href="index.php" class="retina-logo"><img src="images/logo@2x.png" alt="CoWorker" title="CoWorker" height="120" width="204"></a>
-
+            <a class="standard-logo"><img src="images/dickbutt.png" alt="CoWorker" title="CoWorker"></a>
+            <a class="retina-logo"><img src="images/logo@2x.png" alt="CoWorker" title="CoWorker" height="120" width="204"></a>
         </div>
-
-
         <div id="primary-menu">
-
-
-        <div class="rs-menu"><i class="fa fa-align-justify"></i></div>
-
-        <ul class="sf-js-enabled sf-arrows" id="main-menu">
-
-        <li class="current"><a class="sf-with-ul" href="/"><div>Home</div><span>Your public page</span></a></li>
-        <li><a class="sf-with-ul" href="#"><div>Admin</div><span>Your administrative page</span></a></li>
-        <li><a class="sf-with-ul" href="#"><div>Hiring</div><span>Let's build you a website</span></a></li>
-        <li><a class="sf-with-ul" href="#"><div>About Us</div><span>Get to know us better</span></a></li>
-        <li><a class="sf-with-ul" href="#"><div>About Meteor.js</div>The future of the Internet</a></li>
-        <li><a class="sf-with-ul" href="#"><div>Contact</div><span>Get in Touch</span></a></li>
-
-        </ul>
-
-
-        </div>
-
-
+            <div class="rs-menu"><i class="fa fa-align-justify"></i></div>
+                <ul class="sf-js-enabled sf-arrows" id="main-menu">
+                    <li class="{{ isActiveRoute 'home' 'current' }}">
+                        <a class="sf-with-ul header_button" href="/" style="outline: 0;"><div>Home</div><span>Your public page</span></a>
+                    </li>
+                    <li class="{{ isActiveRoute 'admin' 'current' }}">
+                        <a class="sf-with-ul header_button" href="{{pathFor 'admin'}}" style="outline: 0;"><div>Admin</div><span>Your administrative page</span></a>
+                    </li>
+                    <li class="{{ isActiveRoute 'hire' 'current' }}">
+                        <a class="sf-with-ul header_button" href="{{pathFor 'hire'}}" style="outline: 0;"><div>Hiring</div><span>Let's build you a website</span></a>
+                    </li>
+                    <li class="{{ isActiveRoute 'about' 'current' }}">
+                        <a class="sf-with-ul header_button" href="{{pathFor 'about'}}" style="outline: 0;"><div>About Us</div><span>Get to know us better</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>

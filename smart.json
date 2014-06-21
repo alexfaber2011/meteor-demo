@@ -9,6 +9,7 @@
     "autoform": {},
     "spin": {},
     "collection2": {},
-    "reactive-modal": {}
+    "reactive-modal": {},
+    "iron-router-active": {}
   }
 }
