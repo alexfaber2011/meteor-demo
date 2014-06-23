@@ -5,10 +5,12 @@ Router.map ->
 	@route "home",
     	path: "/"
     	waitOn: ->
-      		Meteor.subscribe "comments"
+      	    Meteor.subscribe "comments"
       		Meteor.subscribe "specials"
     @route "admin",
-    	path: "/admin"
+        path: "/admin"
+        waitOn: ->
+            Meteor.subscribe "comments"
     @route "about",
     	path: "/about"
     @route "hire",
