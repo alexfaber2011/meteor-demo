@@ -10,6 +10,7 @@
     "spin": {},
     "collection2": {},
     "reactive-modal": {},
-    "iron-router-active": {}
+    "iron-router-active": {},
+    "reactive-table": {}
   }
 }
