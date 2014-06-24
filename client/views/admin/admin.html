@@ -1,7 +1,7 @@
 <template name="admin">
 	<div id="admin">
-		<h4>Welcome to your Admin page</h4>
+		<h4>Welcome to your Admin page - Manage Site data in realtime!</h4>
+		<h7>Sort through user submitted comments</h7>
+		{{> reactiveTable collection=comments settings=settings}}
 	</div>
-	<h5>Manage Site data in realtime!</h5>
-	{{> reactiveTable collection=comments settings=settings}}
 </template>

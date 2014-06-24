@@ -14,3 +14,9 @@ Template.admin.helpers({
 		};
 	}
 });
+
+Template.admin.events({
+	'click .delete-button': function () {
+		Comments.remove({_id: this._id});
+	}
+});
