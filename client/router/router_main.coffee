@@ -11,6 +11,7 @@ Router.map ->
         path: "/admin"
         waitOn: ->
             Meteor.subscribe "comments"
+            Meteor.subscribe "specials"
     @route "about",
     	path: "/about"
     @route "hire",
