@@ -23,3 +23,24 @@ if(Comments.find().count() === 0 ) {
 		comment: 'Was super crowded last night :('
 	});
 }
+
+if(Specials.find().count() === 0) {
+	Specials.insert({
+		name: 'Pizza',
+		available: new Date(),
+		description: 'Taste good when eat',
+		votes: 0
+	});
+	Specials.insert({
+		name: 'Pizza1',
+		available: new Date(),
+		description: 'Tastesda good when eat',
+		votes: 0
+	});	
+	Specials.insert({
+		name: 'Burger',
+		available: new Date(),
+		description: 'Taste REALLY GOOD when eat',
+		votes: 0
+	});		
+}
