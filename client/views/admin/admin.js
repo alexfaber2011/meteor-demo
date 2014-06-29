@@ -2,6 +2,9 @@ Template.admin.helpers({
 	comments: function() {
 		return Comments.find({});
 	},
+	specials: function() {
+		return Specials.find({});
+	},
 	tableInit: function() {
 		Session.set('table-coll', 'comments');
 	},
@@ -21,7 +24,7 @@ Template.admin.helpers({
 			useFontAwesome: true,
 			fields: [ 
 				{ key: 'name', label: 'Name'},
-				{ key: 'avilable', label: 'Date'},
+				{ key: 'available', label: 'Date'},
 				{ key: 'description', label: 'Description'},
 				{ key: 'votes', label: 'Votes'} 
 			]
