@@ -26,7 +26,8 @@ Template.admin.helpers({
 				{ key: 'name', label: 'Name'},
 				{ key: 'available', label: 'Date'},
 				{ key: 'description', label: 'Description'},
-				{ key: 'votes', label: 'Votes'} 
+				{ key: 'votes', label: 'Votes'},
+				{ key: '_id', label: 'Modify', tmpl: Template.adminModifyItem }
 			]
 		};
 	},
@@ -40,12 +41,29 @@ Template.admin.helpers({
 	currentTable: function() {
 		var current = Session.get('table-coll');
 		return (current.charAt(0).toUpperCase() + current.slice(1));
-	}
+	},
 });
 
 Template.admin.events({
 	'click .delete-button': function () {
 		Comments.remove({_id: this._id});
+	},
+
+	'click .modify-button': function () {
+		Session.set('editSpecialId', this._id);
+		var editSpecialModal = {
+			template: Template.editSpecial,
+			title: "Edit Special",
+			buttons: {
+				cancel: {
+					closeModalOnClick: true,
+					"class": "btn-close",
+					label: "Close"
+				}
+			}
+		}
+		var rd_offer_special = ReactiveModal.initDialog(editSpecialModal);
+    	return rd_offer_special.show();
 	},
 
 	'click .table-btn': function() {
@@ -56,5 +74,21 @@ Template.admin.events({
 		} else {
 			Session.set('table-coll', 'comments');
 		}
+	},
+
+	'click #new-special': function() {
+	    var addSpecialModal = {
+	    	template: Template.addSpecial,
+	    	title: "Add Special",
+	    	buttons: {
+	    	cancel: {
+	        	closeModalOnClick: true,
+	        	"class": "btn-close",
+	        	label: "close"
+	        }
+	      }
+	    };
+		var rd_offer = ReactiveModal.initDialog(addSpecialModal);
+    	return rd_offer.show();
 	}
 });

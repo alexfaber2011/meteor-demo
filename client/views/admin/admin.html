@@ -2,9 +2,9 @@
 	<div id="admin">
 		<h4>Welcome to your Admin page - Manage Site data in realtime!</h4>
 		<br>
-		<div class="text-center"> 
-			<button class="btn btn-primary table-btn"><i class="fa fa-lg fa-arrow-left"></i></button>
-			<button class="btn btn-primary table-btn"><i class="fa fa-lg fa-arrow-right"></i></button>
+		<div class="text-left">
+			<h4>Create a New Special</h4>
+			<button id="new-special" class="btn btn-default">Add Special</button>
 		</div>
 		<br>
 		{{#if displayComments}}
@@ -18,5 +18,10 @@
 				{{{tableInit}}}
 			{{/if}}
 		{{/if}}
+		<br>
+		<div class="text-center"> 
+			<button class="btn btn-primary table-btn"><i class="fa fa-lg fa-arrow-left"></i></button>
+			<button class="btn btn-primary table-btn"><i class="fa fa-lg fa-arrow-right"></i></button>
+		</div>
 	</div>
 </template>
