@@ -320,8 +320,6 @@ dl { margin-left: 20px; }
 
 caption { text-align: left; }
 
-img { max-width: 100%; }
-
 .img-polaroid {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -866,7 +864,6 @@ form small {
 
 #logo img {
     display: block;
-    max-width: 100%;
 }
 
 #logo a.standard-logo { display: block; }
