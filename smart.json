@@ -12,6 +12,6 @@
     "reactive-modal": {},
     "iron-router-active": {},
     "reactive-table": {},
-    "bootstrap-datepicker": {}
+    "fake": {}
   }
 }

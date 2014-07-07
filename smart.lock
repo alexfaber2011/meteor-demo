@@ -14,7 +14,7 @@
       "reactive-modal": {},
       "iron-router-active": {},
       "reactive-table": {},
-      "bootstrap-datepicker": {}
+      "fake": {}
     },
     "packages": {
       "iron-router": {
@@ -49,8 +49,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.13.5",
-        "commit": "27dd5b912eeba687b228a6a7c2c14eef63b12cca"
+        "tag": "v0.14.0",
+        "commit": "30de032833052ea61e9d37bca5523264309d4478"
       },
       "spin": {
         "git": "https://github.com/SachaG/meteor-spin.git",
@@ -77,10 +77,10 @@
         "tag": "v0.3.14",
         "commit": "f5d7105393d5aa038b3f680e5af1adff2a04d4b0"
       },
-      "bootstrap-datepicker": {
-        "git": "https://github.com/acidsound/bootstrap-datepicker.git",
-        "tag": "v0.5.1",
-        "commit": "578d0bad1b5b5120c1abc333e449b8d0256969b4"
+      "fake": {
+        "git": "https://github.com/subhog/meteor-fake.git",
+        "tag": "v0.3.4",
+        "commit": "e5393ddad6fbee5638e5c430666693828b403abc"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
