@@ -1,9 +1,3 @@
-#Template.specialItem.rendered = ->
-#  $('.product').hover (->
-#    $(this > '.vote').fadeIn(50)
-#  ), ->
-#    $(this > '.vote').fadeOut(50)
-
 Template.specialItem.helpers
   available: ->
     moment(this.available).format('YYYY MM DD')

@@ -23,3 +23,24 @@ if(Comments.find().count() === 0 ) {
 		comment: 'Was super crowded last night :('
 	});
 }
+
+if(Specials.find().count() === 0) {
+	Specials.insert({
+		name: 'Pizza',
+		available: new Date(),
+		description: 'Our special pizza on home made crust!',
+		votes: 0
+	});
+	Specials.insert({
+		name: 'Friday Night Fish Fry',
+		available: new Date(),
+		description: 'Caught fresh, fried fresh',
+		votes: 0
+	});	
+	Specials.insert({
+		name: 'Buffalo Burger',
+		available: new Date(),
+		description: 'Not your average burger',
+		votes: 0
+	});		
+}

@@ -43,4 +43,10 @@
 /iron-router-active
 /reactive-table
 /just-i18n
+<<<<<<< HEAD
 /bootstrap3-daterangepicker
+=======
+/meteor-bootstrap-modal
+/bootstrap-datepicker
+/fake
+>>>>>>> cb410d4620bb1dbce57f79613538291bd70716c5

@@ -1,17 +1,8 @@
 <template name="home">
-    <div class="col_full center">
-        <h2>Welcome to Meteor-Demo.  We're just <span>playing</span> around</h2>
-    </div>
     <div class="row">
         {{> specialsList}}
     </div>
     <input type="text" style="width: 215px" name="birthday" id="birthday" class="form-control input-lg" value="Last 30 Days"/>
-    <div class="row">
-        <div class="col-sm-2 col-sm-offset-5">
-            <button id="addSpecial" class="btn btn-default" style="width: 100%;">Add Special</button>
-        </div>
-    </div>
-    <div class="dotted-divider"></div>
     <div class="row">
         {{> commentList}}
     </div>
