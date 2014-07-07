@@ -1,15 +1,11 @@
 <template name="commentList">
-	<div id="comments" class="clearfix">
-
-		<button class="demo_button btn btn-default" type="button">Demo Comment Reactivity</button>
-		<button class="clear_button btn btn-default" type="button">Clear</button><br>
-		
+	<div id="comments">
 		<h3 id="comments-title"><span>{{{numComments}}}</span> Comments</h3>
 		<ol class="commentlist clearfix">
 			{{#each comments}}
 				{{> commentItem}}
 			{{/each}}
 		</ol>
-		{{> addComment}}
 	</div>
+	{{> addComment}}
 </template>

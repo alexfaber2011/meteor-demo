@@ -28,19 +28,19 @@ if(Specials.find().count() === 0) {
 	Specials.insert({
 		name: 'Pizza',
 		available: new Date(),
-		description: 'Taste good when eat',
+		description: 'Our special pizza on home made crust!',
 		votes: 0
 	});
 	Specials.insert({
-		name: 'Pizza1',
+		name: 'Friday Night Fish Fry',
 		available: new Date(),
-		description: 'Tastesda good when eat',
+		description: 'Caught fresh, fried fresh',
 		votes: 0
 	});	
 	Specials.insert({
-		name: 'Burger',
+		name: 'Buffalo Burger',
 		available: new Date(),
-		description: 'Taste REALLY GOOD when eat',
+		description: 'Not your average burger',
 		votes: 0
 	});		
 }
