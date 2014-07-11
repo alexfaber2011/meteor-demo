@@ -1,24 +1,10 @@
 <template name="layout">
     <head>
         <title>Meteor Demo</title>
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
-        <link href="/coworker/css/style.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" type="text/css" href="/coworker/css/retina.css" />
-        <link href="/coworker/css/color.css" rel="stylesheet" type="text/css"/>
-        <link href="/coworker/css/tipsy.css" rel="stylesheet" type="text/css"/>
-        <!-- font-awesome, bootstrap, and animate.css taken care of with mrt -->
-        <link href="/coworker/css/magnific-popup.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body class="stretched">
-        <div id="wrapper" class="clearfix">
-            {{> header}}
-            <div class="content">
-                <div class="content-wrap">
-                    <div class="container clearfix">
-                        {{>yield}}
-                    </div>
-                </div>
-            </div>
+    <body>
+        <div>
+            {{>yield}}
         </div>
     </body>
 </template>
