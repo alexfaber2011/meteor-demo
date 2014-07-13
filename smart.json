@@ -12,6 +12,7 @@
     "reactive-modal": {},
     "iron-router-active": {},
     "reactive-table": {},
-    "fake": {}
+    "fake": {},
+    "collection-hooks": {}
   }
 }

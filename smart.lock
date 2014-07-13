@@ -14,7 +14,8 @@
       "reactive-modal": {},
       "iron-router-active": {},
       "reactive-table": {},
-      "fake": {}
+      "fake": {},
+      "collection-hooks": {}
     },
     "packages": {
       "iron-router": {
@@ -81,6 +82,11 @@
         "git": "https://github.com/subhog/meteor-fake.git",
         "tag": "v0.3.4",
         "commit": "e5393ddad6fbee5638e5c430666693828b403abc"
+      },
+      "collection-hooks": {
+        "git": "https://github.com/matb33/meteor-collection-hooks.git",
+        "tag": "v0.7.2",
+        "commit": "261f61f07b371ae913463fba8964a9b93cab531b"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

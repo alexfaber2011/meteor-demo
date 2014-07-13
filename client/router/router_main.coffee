@@ -6,3 +6,4 @@ Router.map ->
     	path: "/"
     	waitOn: ->
       	    Meteor.subscribe "comments"
+      	    Meteor.subscribe "users"
