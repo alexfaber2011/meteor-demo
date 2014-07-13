@@ -39,6 +39,7 @@
                 </p>
             </div>
             <div class="col-md-4">
+                {{> commentList}}
                 <h3 class="text-center">BUILD</h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -49,6 +50,7 @@
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+                <h4>{{tableName}}</h4>
                 {{> reactiveTable collection=tableColl settings=settings}}
                 <div class="btn-group col-md-4 center-block" style="text-align:center">
                     <button class="btn btn-primary table-btn" id="btn-left" style="display:inline-block;"><i class="fa fa-lg fa-arrow-left"></i></button>

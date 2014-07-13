@@ -1,0 +1,10 @@
+<template name="commentList">
+	<div>
+		<h5>Comments</h5>
+		<ul class="list-group">
+	    	{{#each comments}}
+				{{> commentItem}}
+			{{/each}}
+		</ul>
+    </div>
+</template>

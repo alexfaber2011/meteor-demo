@@ -1,4 +1,14 @@
+var collections = ['Comments','Users'];
 Template.home.helpers({
+	tableName: function() {
+		var curr = Session.get('index');
+		if(curr) {
+			return collections[curr];
+		} else {
+			return collections[0];
+		}
+	},
+
 	tableColl: function() {
 		var curr = Session.get('index');
 		switch(curr) {
@@ -18,15 +28,18 @@ Template.home.helpers({
 			case 0:
 				return {
 					useFontAwesome: true,
+					rowsPerPage: 5,
 					fields: [
 						{ key: 'name', label: 'Name'},
 						{ key: 'comment', label: 'Comment'},
 						{ key: '_id', label: 'Delete', tmpl: Template.commentDelete }
 					]
-				};			
+				};
+
 			case 1:
 				return {
 					useFontAwesome: true,
+					rowsPerPage: 5,
 					fields: [
 						{ key: 'name', label: 'Name'},
 						{ key: 'joined', label: 'Joined'},
@@ -69,5 +82,3 @@ Template.home.events({
 		}
 	},
 });
-
-var collections = ['comments','users'];
