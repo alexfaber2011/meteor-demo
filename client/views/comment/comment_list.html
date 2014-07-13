@@ -1,10 +1,18 @@
 <template name="commentList">
-	<div>
-		<h5>Comments</h5>
+	<div class="demo-wrapper">
 		<ul class="list-group">
 	    	{{#each comments}}
 				{{> commentItem}}
 			{{/each}}
+			<li class="list-group-item">
+				<form  id="comment-form" class="form-horizontal">
+					<div class="input-group input-group-sm" style="padding-bottom: 5px;">
+						<input type="text" class="form-control comment-name" placeholder="Name">
+	  					<input type="text" class="form-control comment-comment" id="comment-input" placeholder="Comment">
+	  				</div>			
+	        		<button style="background-color: #369; border-color: #369;" class="btn btn-info" id="comment-submit" type="submit">Submit</button>
+	        	</form>
+			</li>
 		</ul>
     </div>
 </template>

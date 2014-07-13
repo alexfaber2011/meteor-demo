@@ -1,6 +1,6 @@
 if(Comments.find().count() === 0 ) {
 	Comments.insert({
-		name: 'Bob Johnson',
+		name: 'Bob John',
 		date: new Date(),
 		comment: 'I really enjoyed the specials'
 	});
@@ -12,21 +12,21 @@ if(Comments.find().count() === 0 ) {
 	});
 
 	Comments.insert({
-		name: 'Tommy Anderson',
+		name: 'Tommy Ander',
 		date: new Date(),
-		comment: 'Come for the food! Stay for the awesome website!'
+		comment: 'Come for the food!'
 	});
 
 	Comments.insert({
 		name: 'James Gram',
 		date: new Date(),
-		comment: 'Was super crowded last night :('
+		comment: 'Was super crowded last night'
 	});
 }
 
 if(Users.find().count() === 0 ) {
 	Users.insert({
-		name: 'Bob Johnson',
+		name: 'Bob John',
 		joined: new Date(),
 		comments: 1
 	});
@@ -38,7 +38,7 @@ if(Users.find().count() === 0 ) {
 	});
 
 	Users.insert({
-		name: 'Tommy Anderson',
+		name: 'Tommy Ander',
 		joined: new Date(),
 		comments: 1,
 	});
