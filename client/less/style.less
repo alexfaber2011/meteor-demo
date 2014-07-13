@@ -7,23 +7,14 @@ h1, h2, h3, h4, h5, h6{
   color: @blue;
 }
 
-.header{
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  min-height: 55px;
-  background: @subtle_white;
-  border-bottom: 1px solid @off_white;
-  overflow: hidden;
-  z-index: 2;
-  padding-top: 15px;
+.navbar-default, .navbar-toggle{
+  background-color: @blue;
 
-  .link{
-    vertical-align: middle;
+  a{
+    color: @off_white !important;
 
-    a{
-      font-size: 1.3em;
-      color: @blue;
+    :hover{
+      cursor: pointer;
     }
   }
 }
