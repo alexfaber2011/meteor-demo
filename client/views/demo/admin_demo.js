@@ -1,5 +1,5 @@
 var collections = ['Comments','Users'];
-Template.home.helpers({
+Template.adminDemo.helpers({
 	tableName: function() {
 		var curr = Session.get('index');
 		if(curr) {
@@ -50,7 +50,9 @@ Template.home.helpers({
 			default:
 				return {
 					useFontAwesome: true,
+					rowsPerPage: 5,
 					fields: [
+
 						{ key: 'name', label: 'Name'},
 						{ key: 'comment', label: 'Comment'},
 						{ key: '_id', label: 'Delete', tmpl: Template.commentDelete }
@@ -60,7 +62,7 @@ Template.home.helpers({
 	}
 });
 
-Template.home.events({
+Template.adminDemo.events({
 	'click .delete-button': function () {
 		Comments.remove({_id: this._id});
 	},
