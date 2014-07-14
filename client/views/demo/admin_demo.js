@@ -42,7 +42,11 @@ Template.adminDemo.helpers({
 					rowsPerPage: 5,
 					fields: [
 						{ key: 'name', label: 'Name'},
-						{ key: 'joined', label: 'Joined'},
+						{
+        					key: 'joined',
+        					label: 'Joined',
+        					fn: function (value, object) { return moment(value).format("MMM Do YYYY"); }
+						},
 						{ key: 'comments', label: 'Comments'}
 					]
 				};
