@@ -1,4 +1,5 @@
 @blue: #336699;
+@dark_blue: #0d447c;
 @grey: #C0C0C0;
 @off_white: #ececec;
 @subtle_white: #F7F7F7;
@@ -9,7 +10,15 @@ h1, h2, h3, h4, h5, h6{
 
 .image-border{
   border: 10px solid @subtle_white;
-  box-shadow: 0 10px 5px -4px @grey;
+  box-shadow: 0 5px 5px -4px black;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.white{
+  color: white;
 }
 
 .navbar-default, .navbar-toggle{
@@ -49,7 +58,19 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
+.portfolio-item{
+  margin-bottom: 50px;
+}
+
 //PORTFOLIO
+.blue-section{
+  background-color: @blue;
+
+  p{
+    color: @off_white !important;
+  }
+}
+
 .portfolio-picture{
   img{
     width: 100%;
